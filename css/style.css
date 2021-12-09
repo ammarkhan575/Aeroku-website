@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+
+:root{
+    --primary-color: #047aed;
+}
+
 *{
     box-sizing: border;
     margin: 0;
@@ -35,8 +40,10 @@ img{
     width: 100%;
 }
 
+/* Navbar Styling */
+
 .navbar{
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
@@ -52,13 +59,7 @@ img{
     justify-content: space-between;
 }
 
-.flex{
-    display: flex;
-    justify-content: center; /* justify-content main axis (horizontal hai) ke about set krta hai agar flex direction column ( by default row hoti hai) hoti to verticallly set krta  */
-    align-items: center;  /* align-item cross axix ke about set krta hai */
-    height: 100%;
 
-}
 
 .navbar ul{
     display: flex;
@@ -74,4 +75,90 @@ img{
     border-bottom: 2px solid #fff;
 }
 
-.container
+/* showcase */
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.showcase .grid{
+    grid-template-columns: 55% 40%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    justify-self: flex-end;
+    
+}
+
+
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color:white;
+    transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    z-index: 1;
+
+}
+
+/* Stats */
+
+.stats{
+    padding-top: 100px;
+}
+
+.stats-heading{
+    width: 500px;
+    margin: 1rem auto;
+}
+
+.stats .grid h3{
+    font-size: 35px;
+}
+
+.stats .grid p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
