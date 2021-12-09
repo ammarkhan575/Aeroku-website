@@ -27,6 +27,49 @@
     border: 1px #fff solid;
 }
 
+/* background and colored buttons */
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+/* Text sizes */
+.lead{
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
+/* display */
+
 .container{
     max-width: 1100px;
 }

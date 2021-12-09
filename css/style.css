@@ -3,6 +3,9 @@
 
 :root{
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color:#f4f4f4;
 }
 
 *{
@@ -162,3 +165,20 @@ img{
     font-weight: bold;
 }
 
+/* Cli */
+
+.cli .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.cli .grid >*:first-child{
+    grid-row: 1/ 2 span;
+    grid-column: 1/2 span;
+}
+
+/* Cloud */
+
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
