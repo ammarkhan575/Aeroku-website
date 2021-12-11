@@ -47,6 +47,14 @@
     color: #333;
 }
 
+.bg-primary a, .btn-primary a,
+.bg-secondary a, .btn-secondary a,
+.bg-dark a, .btn-dark a,.bg-light a, .btn-light a {
+    color: #fff;
+}
+
+
+
 /* Text sizes */
 .lead{
     font-size: 20px;
@@ -168,4 +176,57 @@
 }
 .m-5{
     margin: 4rem;
+}
+
+/* Tablets and under */
+@media(max-width:768px){
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{
+        height: auto;
+    }
+
+    .showcase-text{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form{
+        justify-self: center;
+        margin: auto;
+    }
+    
+    .cli .grid >*:first-child{
+        grid-row: 1;
+        grid-column: 1;
+    }
+}
+
+/* Mobiles */
+@media(max-width: 500px){
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .stats .container{
+        max-width: 500px;
+    }
+
+    
 }
